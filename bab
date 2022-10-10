@@ -1,0 +1,63 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mochamad Fathurohim</title>
+    <link rel="stylesheet" href="fathur.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="fathur.js"></script>
+
+</head>
+<body>
+    <div class="gabungan">
+        <div class="acer">
+            <h1><u>Selamat Datang</u></h1>
+            <h2 class="beneran"></h2>    
+            <p>Mochamad Fathurohim</p><p>NIM: 41215306</p>
+            <section style="font-size: 25px;">
+            <img src="logo.jpeg" style="width: 16%">
+  
+        </div>
+        <div class="bagian-inti" align="center">
+            <span class="pilih aktif" id="pilih_1">Chalange</span>
+            <span class="pilih" id="pilih_3">Kontak</span>
+            <span href="#" class="tombol" class="pilih" id="pilih_3"></span>
+            <div class="bib-bawah">
+            <div class="oio">
+        </div></div>
+        </div>
+
+        <div class="gsn" id="pindah_2" style="text-align: center;">
+
+            </section> 
+            </ul>
+            <span class="x"></span>
+        </div>
+
+        <div class="kontak" id="pindah_1" style="display: none;">
+            <br>
+            <h2 class="beneran" style="">Chalange</h2>
+            <p>Ini adalah tugas yang sudah saya kerjakan :</p>
+            <ul>
+                <li><a style="color: black;" href="../p03/index.html">P03 HTML Table Sederhana</a></li>
+                <li><a style="color: black;" href="../p04css-basic/index.html">P04 Formulir Level #2 Basic-CSS HTML Form</a></li>
+                <li><a style="color: black;" href="../p05-jquery-delete/index.html">P05 JQuery FadeOut When Delete</a></li>
+                <li><a style="color: black;" href="../p06-spa-menu/index.html">P06 JQuery Add/Remove Class for SPA Menu</a></li>
+            </ul>
+        </div>
+        <div class="pindah" id="pindah_3" style="display: none;">
+            <br>
+            <h2 class="beneran">Kontak</h2>
+            <p>Silahkan Hub :</p>
+            <ul>
+                <li>Email: <a href="mailto:mochamad.fathurohim@yahoo.com">mochamad.fathurohim@yahoo.com</a>.</li>
+                <li>No.Telp: <a href="#">085220399997</a></li>
+
+            </ul>
+
+        </div>
+        
+       
+            
+
+
+</body></html>

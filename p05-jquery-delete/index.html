@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1>5 Friends</h1>
+    <title>5 Friends</title>
+</head>
+<body>
+    <style>
+        *{
+            background-color: yellowgreen;
+        }
+
+        table, th, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            position: center;
+        }
+        th{
+            background-color: peru;
+            color: white;
+            font-weight: bold;
+        }
+        
+        th:hover{
+            background-color: peru;
+        }
+    
+        th, td{
+            text-align: center;
+            padding: 10px;
+        }
+    
+        td:hover{
+            background-color:whitesmoke;
+        }
+        button{
+        font-weight: bold;
+        background-color: peru;
+        color: white;
+        padding: 12px 16px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-top: 20px;
+        transition: 1.0s;
+        }
+        button:hover{
+        transform: scale(1.1);
+        }
+        .tombol{
+        text-align: center;
+        }
+                h1 {
+            color: indianred;
+            cursor: pointer;
+            transition: 0.2s;
+            text-align : center;
+        }
+        h1:hover{
+            color: green;
+            letter-spacing: 2px;
+        }
+        </style>
+    <table align="center">
+        <tr>
+            <th>No.</th>
+            <th>Nama</th>
+            <th>Alamat</th>
+            <th>Action</th>
+        </tr>
+        <tr class="barisan" id="barisan__1">
+            <td>1.</td>
+            <td class="dalem" id="nama_frends__1">Arya</td>
+            <td class="dalem" id="alamat_frends">Cirebon</td>
+            <td class="dalem" id="hapus__1">Delete</td>
+        </tr>
+        <tr class="barisan" id="barisan__2">
+            <td>2.</td>
+            <td class="dalem" id="nama_frends__2">Sapuri</td>
+            <td class="dalem" id="alamat_frends">Cirebon</td>
+            <td class="dalem" id="hapus__2">Delete</td>
+        </tr>
+        <tr class="barisan" id="barisan__3">
+            <td>3.</td>
+            <td class="dalem" id="nama_frends__3">Rizki</td>
+            <td class="dalem" id="alamat_frends">Cirebon</td>
+            <td class="dalem" id="hapus__3">Delete</td>
+        </tr>
+        <tr class="barisan" id="barisan__4">
+            <td>4.</td>
+            <td class="dalem" id="nama_frends__4">Salman</td>
+            <td class="dalem" id="alamat_frends">Cirebon</td>
+            <td class="dalem" id="hapus__4">Delete</td>
+        </tr>
+        <tr class="barisan" id="barisan__5">
+            <td>5.</td>
+            <td class="dalem" id="nama_frends__5">Bimo</td>
+            <td class="dalem" id="alamat_frends">Cirebon</td>
+            <td class="dalem" id="hapus__5">Delete</td>
+        </tr>
+        </table>
+        <table align="center"></table>
+    <div class="tombol">
+        <a onclick="alert('Apakah kamu ingin kembali ke Home?')" href="https://azzahramf.github.io">
+            <button>Back to Home</button>
+        </a>
+    </div>
+</table>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+    $(document).ready(function(){
+        $('.dalem').click(function(){
+        let dalem = $(this).text();
+        let tid = $(this).prop('id');
+        let rid = tid.split('__');
+        let baris_ke = rid[1];
+        let nama_frends = $('#nama_frends__'+baris_ke).text();
+        
+        if(dalem=='Delete'){
+            let yakin = confirm(`Menghapus ${nama_frends} dari daftar?`);
+            if(!yakin) return;
+            $('#barisan__'+baris_ke).fadeOut();
+            }else{
+            alert('Belum ada');
+        }
+        })
+    })
+</script>
+</body>
+</html>

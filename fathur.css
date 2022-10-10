@@ -1,0 +1,109 @@
+.gabungan{
+	margin-right: auto;
+	margin-left: auto;
+	width: 800px;
+}
+@media only screen and (max-width: 800px){
+	.gabungan{
+		width: 100%;
+	}
+}
+.acer{
+	background-color: lightcoral;
+	padding: 5px 10px 20px;
+	text-align: center;
+	border: 1px red;
+	border-radius: 5px 5px 0 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.beneran{
+	margin: 0 0 3px;
+	transition: 0.5s;
+	font-size: 20px;
+	font-weight: bold;
+}
+.bagian-inti{
+    	background-color: orangered;
+    	padding: 15px 0;
+    	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.pilih{
+	margin: 0;
+	padding: 15px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.pilih:hover{
+	background-color: darkred;
+}
+.aktif{
+	background-color: darkred;
+}
+.bib-bawah {
+    display: none;
+    background-color: skyblue;
+    min-width: 200px;
+}
+.bib-bawah a {
+	font-family: "Arial", sans-serif;
+    color: blue;
+    padding: 5px;
+    text-decoration: none;
+    display: block;
+}
+
+.ioi:hover .ioi-bawah {
+    display: block;
+}
+.gsn{
+	padding: 20px;
+	border-left: 1px navy;
+	border-right: 1px navy;
+}
+body{
+	background-color: antiquewhite;
+}
+
+span{
+	align-content: center;
+}
+img{
+  	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+	cursor: pointer;
+	width: 100%;
+	border-radius: 10%;
+	box-shadow: 1px 1px 4px gray;
+	padding: 3px;
+	transition: 0.5s;
+}
+
+img:hover{
+	transform: scale(1.1);
+}
+
+h2{
+	margin: auto;
+}
+
+h2:hover{
+	letter-spacing: 3px;
+}
+
+a{
+	color: navy;
+	text-decoration: none;
+	transition: 0.5s;
+}
+
+a:hover{
+	text-decoration: underline;
+	letter-spacing: 1px;
+}
